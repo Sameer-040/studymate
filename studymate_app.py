@@ -15,7 +15,7 @@ openai.api_base = "https://openrouter.ai/api/v1"
 
 # ---------------- SETUP ----------------
 #engine = pyttsx3.init()
-#model_embed = SentenceTransformer("all-MiniLM-L6-v2")
+model_embed = SentenceTransformer("all-MiniLM-L6-v2")
 
 #def speak(text):
 #    engine.say(text)
