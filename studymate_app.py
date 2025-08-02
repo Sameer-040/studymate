@@ -2,7 +2,7 @@
 import streamlit as st
 import fitz  # PyMuPDF
 import base64
-import pyttsx3
+#import pyttsx3
 import requests
 import numpy as np
 import openai
@@ -14,12 +14,12 @@ openai.api_key = OPENROUTER_API_KEY
 openai.api_base = "https://openrouter.ai/api/v1"
 
 # ---------------- SETUP ----------------
-engine = pyttsx3.init()
-model_embed = SentenceTransformer("all-MiniLM-L6-v2")
+#engine = pyttsx3.init()
+#model_embed = SentenceTransformer("all-MiniLM-L6-v2")
 
-def speak(text):
-    engine.say(text)
-    engine.runAndWait()
+#def speak(text):
+#    engine.say(text)
+#    engine.runAndWait()
 
 # ---------------- PDF HANDLING ----------------
 def extract_text_from_pdfs(files):
@@ -129,8 +129,8 @@ if uploaded_files:
 
             st.success("✅ Answer ready!")
             st.markdown(f"**Answer:** {answer}")
-            if st.button("🔊 Read Aloud"):
-                speak(answer)
+            #if st.button("🔊 Read Aloud"):
+             #   speak(answer)
 
     with col2:
         st.markdown("### 📚 Tools")
