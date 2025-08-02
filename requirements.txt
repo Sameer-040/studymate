@@ -1,0 +1,7 @@
+streamlit
+PyMuPDF
+pyttsx3
+openai==0.28
+requests
+numpy
+sentence-transformers
